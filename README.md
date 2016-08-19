@@ -1,7 +1,8 @@
 # Web-Project
 
 **1.FoodDelivery**
-You can post food ordering on this page and share them on Facebook with your friends, all of registered users are allow to order meals. In the end, this page will return the total dollars, number of meal’s type to the owner. 
+You can post food ordering on this page and share them on Facebook with your friends, all of registered users are allow to order meals. In the end, this page will return the total dollars, number of meal’s type to the owner.
+
 **Technical Highlights**
 
  1. MySQL database
@@ -10,6 +11,7 @@ You can post food ordering on this page and share them on Facebook with your fri
 
 **2.HpcLabDatabase**
 This is a database for meeting slides and paper files. It’s very convenience for us. You can post the paper with slides, every member can read and leave message on it.
+
 **Technical Highlights**
 
  4. MySQL database
@@ -17,7 +19,6 @@ This is a database for meeting slides and paper files. It’s very convenience f
  6. File uploads and downloads
 
 **3.PersonalResume**
-
 My personal page but stop update.
 
 **4.SmartFish**
