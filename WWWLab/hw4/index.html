@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+		<title>HW4</title>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+         <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+	</head>
+	<body>
+        <div id="header">
+          
+               <h1>HTML5 Raiden X</h1>
+         
+        </div>
+           
+		<div id="wrapper">
+            <audio id="Button">
+				<source src="audio/button.wav">
+			</audio>
+            <audio id="Life">
+				<source src="audio/elife.wav">
+			</audio>
+            <audio id="OST">
+				<source src="audio/OST.mp3" type="audio/mp3">
+			</audio>
+            <audio id="Hit">
+				<source src="audio/Hit.wav">
+			</audio>
+            <audio id="Shoot">
+				<source src="audio/Shoot.wav">
+			</audio>
+            <div class="row">
+        <div class="col-md-2">
+             <button type="button" id="Button_f" class="btn btn-lg btn-info">GO!(Change your Fighter)</button>
+      <table align="center" class="table table-striped">
+                <tr>
+                     <td><input type="radio" name="fighter"  checked="checked" value="p1"><img src="img/p1.png" alt="" height=100 width=100></img></td>
+                </tr><tr>
+               <td><input type="radio" name="fighter"   value="p2"><img src="img/p2.png" alt="" height=100 width=100></img></td>
+           
+                </tr><tr>
+                      <td><input type="radio" name="fighter"  value="p3"><img src="img/p3.png" alt="" height=100 width=100></img></td>
+                </tr>
+
+            
+            </table>
+                </div> <div class="col-md-8">
+         <button type="button"  id="Button_r" class="btn btn-lg btn-success">RANK</button>
+ <div >
+        <canvas id="scene" width="800" height="600"></canvas>
+    </div>
+
+                 </div> <div class="col-md-2">
+        <button type="button" id="Button_e" class="btn btn-lg btn-warning">Choose your Enemy</button>
+<table align="center" class="table table-striped">
+                <tr>
+                     <td><input type="radio" name="efighter"  checked="checked" value="e1"><img src="img/e1.png" alt="" height=100 width=100></img></td>
+                </tr><tr>
+               <td><input type="radio" name="efighter"   value="e2"><img src="img/e2.png" alt="" height=100 width=100></img></td>
+           
+                </tr><tr>
+                      <td><input type="radio" name="efighter"  value="e3"><img src="img/e3.png" alt="" height=100 width=100></img></td>
+                </tr>
+
+            
+            </table>
+                </div>
+
+<script>
+					var btn_f = document.getElementById("Button_f");//選戰鬥機按鈕	
+                    btn_f.onclick = function() {
+					
+					}
+                    var btn_e = document.getElementById("Button_e");//選戰鬥機按鈕	
+                    btn_e.onclick = function() {
+
+                    }
+                    var btn_r = document.getElementById("Button_r");//選戰鬥機按鈕	
+                    btn_r.onclick = function() {
+
+                    }
+</script>
+            </div>
+		</div><!-- .page -->
+      
+	</body>
+</html>

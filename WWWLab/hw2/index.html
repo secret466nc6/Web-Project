@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>HW2</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="center">
+    <h1>Enter XML File</h5>
+        <form id="form1" action="xmlview.html" method="get" target="_blank">  
+ 	<select onchange="this.form.ename.value=this.value">  
+ 	    <option value="">請選擇</option>  
+ 	    <option value="Japanfood.xml">Japanfood</option>  
+ 	    <option value="basketball.xml">basketball</option>  
+ 	    <option value="mixed.xml">mixed</option>  
+         <option value="error.xml">error</option>  
+ 	</select>  
+            
+ 	<input type="text" id="ename" name="ename">  
+            <p><a href="xml/basketball.xml">View XSL result for basketball xml</a></p>
+            <input type="submit" value="Submit Query" onclick="return CheckFunc(form1)"/>
+ 	</form> 
+         <script language="javascript" type="text/javascript">
+    function CheckFunc(my_form)
+    {
+        msg = "";
+         var str="xml/";
+            //document.writeln(str.concat( getxml[1]));
+			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp1 = new XMLHttpRequest();
+			} else {// code for IE6, IE5
+				xmlhttp1 = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp1.open("GET",str.concat(document.forms[0].ename.value), false);
+			xmlhttp1.send();
+			xmlDoc1 = xmlhttp1.responseXML;
+    if(document.forms[0].ename.value == "")
+     {
+     msg = "Error, Please input XML url.";
+        
+     }else if(xmlDoc1==null){
+               msg = "Error in XML file.";
+     }else
+     {  
+     return true;
+     }
+     alert(msg);
+     return false;
+   }
+    </script> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+        table {
+            border: none;
+        }
+        th, td {
+            border: none;
+            background-color: #dddddd;
+            padding: 5px;
+            text-align:center;
+        }
+        .center {    
+            margin:auto;
+            width: 500px;
+        }
+        a  {
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:underline;}
+        }
